@@ -19,4 +19,32 @@ describe ("assertion tests", function () {
     it ("array of string", function() {
         expect(helpFunction.arrayStr).toEqual(["d", "f", "r"]);
     })
+
+    it("stops all execution on a function", function() {
+        expect(helpFunction.bar).toBeNull();
+      });
+
+      it ("Define element", function() {
+          expect(helpFunction.str).toBeDefined();
+      })
+
+      it ("More than", function() {
+          expect(helpFunction.number).toBeGreaterThan(0);
+      })
+
+      it ("More than", function() {
+        expect(helpFunction.number).toBeLessThan(7);
+    })
+
+    it("Check undefined", function() {
+        expect(helpFunction.empty).toBeUndefined();
+    })
+
+    it("Check true", function() {
+        expect(helpFunction.boolTrue).toBeTruthy();
+    })
+
+    it("Check false", function() {
+        expect(helpFunction.boolFalse).toBeFalsy();
+    })
 })

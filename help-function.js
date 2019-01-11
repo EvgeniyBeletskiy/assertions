@@ -9,6 +9,15 @@ var HelpFunctions = function () {
 
     this.arrayStr = ["d", "f", "r"];
 
+    this.bar = null;
+
+    this.number = 5;
+
+    this.empty;
+
+    this.boolTrue = 1;
+    this.boolFalse = 0;
+
 }
 
 module.exports = new HelpFunctions();
